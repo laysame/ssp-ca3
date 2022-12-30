@@ -20,8 +20,39 @@
 </nav>
 <!-- Page content-->
 <div class="container">
-    <div class="text-center mt-5">
-        <h3>Start managing your tasks with our todo app ✨</h3>
+    <div class="text-center mt-5 mb-5">
+        <h4>Start managing your tasks with our todo app ✨</h4>
+    </div>
+</div>
+
+<div class="container px-4">
+    <div class="row gx-5">
+        <div class="col-4">
+            <div class="p-3 border rounded-1">
+                <p class="pb-2">Select the day of the week 📅</p>
+                <form enctype="application/json" action="/post/json" method="post">
+                    <div class="form-group">
+                        <select class="form-select form-select-sm" name="section">
+                            <option value="0">Monday</option>
+                            <option value="1">Tuesday</option>
+                            <option value="2">Wednesday</option>
+                            <option value="3">Thursday</option>
+                            <option value="4">Friday</option>
+                            <option value="5">Saturday</option>
+                            <option value="6">Sunday</option>
+                        </select>
+                        <input class="form-control form-control-sm mt-3" type="text" name="task" placeholder="Add your task...">
+                        <div class="d-grid gap-2 mt-3">
+                            <button type="submit" class="btn" style="background-color: #6610f2; color: #f0f0f0">Add
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--  <div class="col">
+              <div class="p-3 border bg-light">Custom column padding</div>
+          </div>-->
     </div>
 </div>
 
