@@ -10,6 +10,10 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"></script>
+    <script src="js/todoListTable.js"></script>
 </head>
 <body>
 <!-- Responsive navbar-->
@@ -27,7 +31,7 @@
 
 <div class="container px-4">
     <div class="row gx-5">
-        <div class="col-4">
+        <div class="col-6">
             <div class="p-3 border rounded-1">
                 <p class="pb-2">Select the day of the week 📅</p>
                 <form enctype="application/json" action="/post/json" method="post">
@@ -41,7 +45,8 @@
                             <option value="5">Saturday</option>
                             <option value="6">Sunday</option>
                         </select>
-                        <input class="form-control form-control-sm mt-3" type="text" name="task" placeholder="Add your task...">
+                        <input class="form-control form-control-sm mt-3" type="text" name="task"
+                               placeholder="Add your task...">
                         <div class="d-grid gap-2 mt-3">
                             <button type="submit" class="btn" style="background-color: #6610f2; color: #f0f0f0">Add
                             </button>
@@ -50,9 +55,9 @@
                 </form>
             </div>
         </div>
-        <!--  <div class="col">
-              <div class="p-3 border bg-light">Custom column padding</div>
-          </div>-->
+
+        <div id="list" class="col-6 p-3 border rounded-1"></div>
+
     </div>
 </div>
 

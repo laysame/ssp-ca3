@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <todo>
-
+    <day name="Monday">
+        <task>
+            <listing>Finish the project</listing>
+        </task>
+    </day>
+    <day name="Tuesday"/>
+    <day name="Wednesday"/>
+    <day name="Thursday"/>
+    <day name="Friday"/>
+    <day name="Saturday"/>
+    <day name="Sunday"/>
 </todo>
