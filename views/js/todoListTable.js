@@ -21,6 +21,7 @@ const selectRow = () => {
         $(".selected").removeClass("selected");
         $(this).addClass("selected");
         const section = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
+        console.log(section)
         const task = $(this).attr("id") - 1;
         deleteRow(section, task);
     })

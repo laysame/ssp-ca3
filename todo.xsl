@@ -4,8 +4,7 @@
         <table id="todoList" border="1" class="indent">
             <thead>
                 <tr>
-                    <th>Select</th>
-                    <th>Task</th>
+                    <th>To be done ⌛</th>
                 </tr>
             </thead>
             <tbody>
@@ -17,7 +16,7 @@
                     </tr>
                     <xsl:for-each select="task">
                         <tr id="{position()}">
-                            <td align="center">
+                            <td align="left">
                                 <input name="task0" type="checkbox"/>
                             </td>
                             <td>

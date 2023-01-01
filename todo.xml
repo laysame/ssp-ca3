@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <todo>
-    <day name="Monday">
-        <task>
-            <listing>Finish the project</listing>
-        </task>
-    </day>
-    <day name="Tuesday"/>
-    <day name="Wednesday"/>
-    <day name="Thursday"/>
-    <day name="Friday"/>
-    <day name="Saturday"/>
-    <day name="Sunday"/>
+  <day name="Monday">
+    <task>
+      <listing>Finish the project</listing>
+    </task>
+  </day>
+  <day name="Tuesday">
+    <task>
+      <listing>Do something</listing>
+    </task>
+  </day>
+  <day name="Wednesday">
+    <task>
+      <listing>Start the reading of new book</listing>
+    </task>
+  </day>
+  <day name="Thursday">
+    <task>
+      <listing>Finish something else</listing>
+    </task>
+  </day>
+  <day name="Friday">
+    <task>
+      <listing>Book restaurant </listing>
+    </task>
+  </day>
+  <day name="Saturday">
+    <task>
+      <listing>Buy a gift</listing>
+    </task>
+  </day>
+  <day name="Sunday">
+    <task>
+      <listing>Plan the week</listing>
+    </task>
+  </day>
 </todo>

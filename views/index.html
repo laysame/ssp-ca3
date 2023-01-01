@@ -9,6 +9,7 @@
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/style.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
             integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
@@ -25,27 +26,27 @@
 <!-- Page content-->
 <div class="container">
     <div class="text-center mt-5 mb-5">
-        <h4>Start managing your tasks with our todo app ✨</h4>
+        <h4 lass="lead">Start managing your tasks with our todo app ✨</h4>
     </div>
 </div>
 
 <div class="container px-4">
     <div class="row gx-5">
-        <div class="col-6">
+        <div class="col-5">
             <div class="p-3 border rounded-1">
                 <p class="pb-2">Select the day of the week 📅</p>
                 <form enctype="application/json" action="/post/json" method="post">
                     <div class="form-group">
                         <select class="form-select form-select-sm" name="section">
-                            <option value="0">Monday</option>
-                            <option value="1">Tuesday</option>
-                            <option value="2">Wednesday</option>
-                            <option value="3">Thursday</option>
-                            <option value="4">Friday</option>
-                            <option value="5">Saturday</option>
-                            <option value="6">Sunday</option>
+                            <option value="0">Monday 🥲</option>
+                            <option value="1">Tuesday 🫣</option>
+                            <option value="2">Wednesday 🫡</option>
+                            <option value="3">Thursday 😏</option>
+                            <option value="4">Friday 🥳</option>
+                            <option value="5">Saturday 🫶</option>
+                            <option value="6">Sunday ✨</option>
                         </select>
-                        <input class="form-control form-control-sm mt-3" type="text" name="task"
+                        <input class="form-control form-control-sm mt-3" type="text" name="listing"
                                placeholder="Add your task...">
                         <div class="d-grid gap-2 mt-3">
                             <button type="submit" class="btn" style="background-color: #6610f2; color: #f0f0f0">Add
@@ -53,10 +54,14 @@
                         </div>
                     </div>
                 </form>
+                <div class="d-grid gap-2 mt-3">
+                    <button type="submit" class="btn" id="delete" style="background-color: #0d5e0d; color: #f0f0f0">Done
+                    </button>
+                </div>
             </div>
         </div>
 
-        <div id="list" class="col-6 p-3 border rounded-1"></div>
+        <div id="list" class="col-4 p-3 border rounded-1"></div>
 
     </div>
 </div>

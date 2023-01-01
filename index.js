@@ -84,6 +84,24 @@ app.post('/post/json', function (request, response) {
     response.redirect('back');
 });
 
+app.post('/post/delete', function (request, response) {
+    function deleteJSON(obj) {
+        console.log(obj);
+        XMLtoJSON('todo.xml', function (err, result) {
+            if (err) throw (err);
+            console.log(result)
+            result.todo.day[obj.section].task.splice(obj.task, 1);
+
+            JSONtoXML('todo.xml', result, function (err) {
+                if (err) throw (err)
+            });
+        });
+    }
+
+    deleteJSON(request.body);
+
+    response.redirect('back');
+});
 
 /**
  * Setup server to be listened to the port 3000
