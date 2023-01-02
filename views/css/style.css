@@ -1,12 +1,22 @@
 table {
     border: none;
+    width: 100%;
+    margin: 0;
+}
+
+th {
+    font-weight: bold;
 }
 
 td:nth-child(1) {
     text-align: center;
-    font-weight: bold;
     color: #6610f2;
 }
+
+td:nth-child(2) {
+    text-align: left;
+}
+
 
 /*
 .selected {

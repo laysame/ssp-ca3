@@ -1,3 +1,4 @@
+// Back-end
 const http = require('http'), //HTTP server
     path = require('path'),
     express = require('express'), //handling HTTP requests and routing
@@ -64,8 +65,6 @@ app.post('/post/json', function (request, response) {
             if (err) throw (err);
 
             const day = result.todo.day[obj.section];
-            console.log(day)
-
             // If the day does not have a task node yet, we make sure to create the array to contain the children
             if (!day.task) {
                 day.task = [];

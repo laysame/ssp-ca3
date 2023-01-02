@@ -10,15 +10,14 @@
             <tbody>
                 <xsl:for-each select="//day">
                     <tr>
-                        <td colspan="3">
+                        <td colspan="2">
                             <xsl:value-of select="@name"/>
                         </td>
                     </tr>
                     <xsl:for-each select="task">
+
                         <tr id="{position()}">
-                            <td align="left">
-                                <input name="task0" type="checkbox"/>
-                            </td>
+                            <td align="center"><input type="checkbox"/></td>
                             <td>
                                 <xsl:value-of select="listing"/>
                             </td>

@@ -1,3 +1,4 @@
+// Front-end
 // appends the results to the table
 const drawTable = () => {
     $("#list").empty();
@@ -20,7 +21,7 @@ const selectRow = () => {
     $("#todoList tbody tr[id]").click(function () {
         $(".selected").removeClass("selected");
         $(this).addClass("selected");
-        const section = $(this).prevAll("tr").children("td[colspan='3']").length - 1;
+        const section = $(this).prevAll("tr").children("td[colspan='2']").length - 1;
         console.log(section)
         const task = $(this).attr("id") - 1;
         deleteRow(section, task);

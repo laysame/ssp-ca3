@@ -2,7 +2,7 @@
 <todo>
   <day name="Monday">
     <task>
-      <listing>Finish the project</listing>
+      <listing>Finish some task</listing>
     </task>
   </day>
   <day name="Tuesday">
@@ -12,7 +12,7 @@
   </day>
   <day name="Wednesday">
     <task>
-      <listing>Start the reading of new book</listing>
+      <listing>Finish something else</listing>
     </task>
   </day>
   <day name="Thursday">
